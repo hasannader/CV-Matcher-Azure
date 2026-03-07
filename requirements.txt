@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain-openai
+langchain-community
+qdrant-client
+pypdf
+tiktoken
+python-dotenv
+qdrant-client==1.7.3
