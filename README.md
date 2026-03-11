@@ -10,7 +10,6 @@ repo/
 ├── config.py           # Configuration and prompt templates
 ├── utils.py            # Utility functions (PDF extraction, etc.)
 ├── app.py              # Streamlit web application
-├── main.py             # Command-line integration script
 ├── requirements.txt    # Python dependencies
 └── README.md           # This file
 ```
@@ -115,18 +114,9 @@ python vector_database.py
 ```
 
 #### Test RAG Module (Mohamed & Emad)
-See `main.py` for complete integration
+Test the complete system using the Streamlit app (see step 3 above)
 
-### 5. Run Command-Line Version
-```bash
-python main.py
-```
-```
-
-This runs the complete pipeline with sample CV data (no file uploads needed).# Test Chunking Module (Hassan)
-```bash
-python chunking.py
-```
+---
 ### Complete Pipeline:
 ```
 1. PDF Files (Upload via Streamlit)
@@ -230,7 +220,7 @@ Each module can be developed and tested independently:
 - **Mariam & Radwa** can develop the vector database using sample chunks
 - **Mohamed & Emad** can build the RAG system with a mock retriever
 
-All modules come together in `main.py` for the complete pipeline.
+All modules come together in `app.py` for the complete Streamlit application.
 
 ---
 
@@ -246,8 +236,8 @@ python chunking.py
 # Mariam & Radwa test vector database
 python vector_database.py
 
-# Mohamed & Emad see main.py for RAG testing
-python main.py
+# Mohamed & Emad test complete system
+streamlit run app.py
 ```Key Files
 
 ### config.py
